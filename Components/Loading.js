@@ -1,15 +1,13 @@
-
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import Loading from './Components/Loading';
-import Weather from './Components/Weather';
+import weather from './Weather';
 
-export default function App() {
+
+const Loading=()=> {
   return (
     <View style={styles.container}>
-      <Weather/>
-      
+      <Text style ={{color:'white'}}>loading</Text>
     </View>
   );
 }
@@ -17,8 +15,9 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#2c3e58',
     alignItems: 'center',
     justifyContent: 'center',
   },
 });
+export default Loading;
