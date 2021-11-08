@@ -7,7 +7,7 @@ import weather from './Weather';
 const Loading=()=> {
   return (
     <View style={styles.container}>
-      <Text style ={{color:'white'}}>loading</Text>
+      <Text style ={{color:'white'}}>Loading</Text>
     </View>
   );
 }
